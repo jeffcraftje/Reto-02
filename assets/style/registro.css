@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.todo{
+  margin: 10px;
+}
+input[type=text], textarea, [type=number]{
+  width: 100% !important;
+  padding: 12px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+}
+  
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+  
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  width: 300px !important;
+  padding: 12px 20px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  margin-left: 25% !important;
+}
+.container {
+  border-radius: 5px !important;
+  background-color: #f2f2f2 !important;
+  padding: 20px !important;
+  width: 600px !important;
+}
+ 
+.container h1{
+  text-align: center;
+}
+.col-25 {
+  width: 200px !important;
+  margin-top: 6px !important;
+}
+  
+.col-75 {
+  width: 50% !important;
+  margin-top: 6px !important;
+}
+  
+.row:after {
+  content: "" !important;
+  display: table !important;
+  clear: both !important;
+}
+  
+@media screen and (max-width: 600px ) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+}
